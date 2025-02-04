@@ -1,0 +1,56 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.head img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.new, .log {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new, .log {
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+}

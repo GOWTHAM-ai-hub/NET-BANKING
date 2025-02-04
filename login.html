@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="./create.css">
+</head>
+<body>
+    <form>
+        <label>EMAIL ID:</label><br/>
+        <input placeholder="ENTER YOUR EMAIL" type="text"><br/><br/>
+        <label> PASSWORD:</label><br/>
+        <input placeholder="ENTER YOUR PASSWORD" type="password"><br/><br/>
+        <button > LOGIN</button>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    // Select the form element
+    const form = document.querySelector('form');
+
+    // Add an event listener for form submission
+    form.addEventListener('submit', function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+        // Show the alert popup
+        alert('Login successful!');
+    });
+});
+    </script>
+</body>
+</html>
